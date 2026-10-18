@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hare Krishna Community | Bloomington-Normal, IL | ISKCON Inspired</title>
+    <!-- Favicon / Browser Tab Icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23dd6b20'/><text x='50' y='60' font-size='40' fill='%23ffffff' font-family='Georgia, serif' font-weight='bold' text-anchor='middle'>HKC</text></svg>">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official page of Hare Krishna Community (HKC) in Bloomington, Normal IL. Inspired by ISKCON and Srila Prabhupada. Join our Bhakti Vriksha, Srimad Bhagavatam reading, Sunday Feast, Bhakti Kids In Person Classes, kirtans, and visiting saints.">
+    <meta name="keywords" content="ISKCON, iskcon, hare krishan, Bloomington, Normal, HKC, Hare Krishna Community, Bhakti Vriksha, Srimad Bhagavatam, Srila Prabhupada, Chaitanya Mahaprabhu">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: {
+                            50: '#fffaf0',
+                            100: '#feebc8',
+                            200: '#fbd38d',
+                            300: '#f6ad55',
+                            400: '#ed8936',
+                            500: '#dd6b20',
+                            600: '#c05621',
+                            700: '#9b2c2c',
+                            800: '#7b1113',
+                            900: '#4a0404'
+                        },
+                        gold: {
+                            300: '#f6e05e',
+                            400: '#ecc94b',
+                            500: '#d69e2e',
+                            600: '#b7791f'
+                        },
+                        devotional: {
+                            cream: '#fffdf7',
+                            cardBg: '#ffffff',
+                            darkText: '#2d3748'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(74, 4, 4, 0.85) 0%, rgba(192, 86, 33, 0.80) 100%);
+        }
+        .pattern-bg {
+            background-color: #fffdf7;
+            background-image: radial-gradient(#ed8936 0.5px, transparent 0.5px), radial-gradient(#ed8936 0.5px, #fffdf7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        :root { --hkc-ivory:#fffaf0; --hkc-cream:#f7f0e3; --hkc-navy:#182d4d; --hkc-blue:#203e68; --hkc-saffron:#c85b24; --hkc-gold:#c7a45a; --hkc-ink:#292c32; }
+        html { scroll-padding-top:96px; }
+        body { background:var(--hkc-ivory); color:var(--hkc-ink); }
+        ::selection { background:#ead6a6; color:#182d4d; }
+        a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible { outline:3px solid #d9b96e; outline-offset:3px; }
+        .font-cinzel { letter-spacing:.015em; }
+        header { box-shadow:0 5px 28px rgba(31,38,50,.07)!important; }
+        header .h-20 { min-height:84px; }
+        .hero-gradient { background:linear-gradient(90deg,rgba(17,34,59,.94) 0%,rgba(25,46,76,.79) 48%,rgba(98,49,23,.48) 100%),linear-gradient(0deg,rgba(16,29,48,.35),transparent 55%); }
+        #home { min-height:min(780px,88vh); isolation:isolate; }
+        #home > div:first-child img { filter:saturate(.82) contrast(1.04); }
+        #home h1 { text-wrap:balance; line-height:1.12; }
+        #home h1 .text-gold-400 { color:#f2d58d; }
+        .pattern-bg { background-color:var(--hkc-ivory); background-image:radial-gradient(circle at 1px 1px,rgba(174,132,56,.12) 1px,transparent 0); background-size:24px 24px; }
+        #programs,#festivals,#saints,#contact { scroll-margin-top:94px; }
+        #programs .program-card,#festivals > div > div > div,#saints .bg-devotional-cream,#contact .bg-white { border-color:rgba(174,132,56,.22); box-shadow:0 8px 26px rgba(31,38,50,.045); transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+        #programs .program-card:hover,#festivals > div > div > div:hover,#saints .bg-devotional-cream:hover { transform:translateY(-4px); box-shadow:0 18px 42px rgba(31,38,50,.10); border-color:rgba(174,132,56,.48); }
+        #programs .program-card > div:first-child { height:220px; }
+        #programs .program-card img,#saints img { transition:transform .6s ease,filter .6s ease; filter:saturate(.88); }
+        #programs .program-card:hover img,#saints .bg-devotional-cream:hover img { transform:scale(1.045); filter:saturate(1); }
+        #festivals .grid > div { border-width:1px; border-radius:1.25rem; }
+        #contact input,#contact select,#contact textarea,#rsvp-modal input,#rsvp-modal textarea { min-height:44px; border-color:#ddd5c7; background:#fffefa; }
+        #contact textarea,#rsvp-modal textarea { min-height:auto; }
+        button,a[class*="bg-"] { transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease; }
+        footer { background:#152641!important; }
+        img { color:transparent; }
+        img[loading="lazy"] { background:linear-gradient(135deg,#eee3cf,#f8f4eb); }
+        @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
+        @media(max-width:640px) { #home { min-height:0; } #home .grid { gap:2rem; } #home h1 { font-size:clamp(2.2rem,10vw,3.3rem); } #programs .program-card > div:first-child { height:205px; } section.py-20 { padding-top:4rem; padding-bottom:4rem; } }
+
+    </style>
+</head>
+<body class="bg-devotional-cream text-gray-800 font-sans antialiased">
+
+    <!-- Announcement Bar -->
+    <div class="bg-saffron-800 text-saffron-100 py-2 px-4 text-center text-xs sm:text-sm font-medium tracking-wide border-b border-saffron-600">
+        <i class="fas fa-om mr-2 text-gold-400"></i>
+        <span>Hare Krishna Hare Krishna Krishna Krishna Hare Hare | Hare Rama Hare Rama Rama Rama Hare Hare</span>
+        <i class="fas fa-om ml-2 text-gold-400"></i>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-saffron-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Title -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full bg-saffron-500 flex items-center justify-center text-white text-lg font-bold shadow-md border-2 border-gold-400 group-hover:scale-105 transition-transform font-cinzel">
+                        HKC
+                    </div>
+                    <div>
+                        <span class="block font-cinzel font-bold text-lg sm:text-xl text-saffron-900 tracking-wider">Hare Krishna Community</span>
+                        <span class="block text-xs font-semibold text-saffron-600 tracking-widest uppercase">Bloomington - Normal, IL</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex space-x-6 font-medium text-gray-700 text-sm">
+                    <a href="#home" class="hover:text-saffron-600 transition-colors py-1">Home</a>
+                    <a href="#about" class="hover:text-saffron-600 transition-colors py-1">About Us</a>
+                    <a href="#programs" class="hover:text-saffron-600 transition-colors py-1">Weekly Programs</a>
+                    <a href="#festivals" class="hover:text-saffron-600 transition-colors py-1">Festivals</a>
+                    <a href="#saints" class="hover:text-saffron-600 transition-colors py-1">Visiting Saints</a>
+                    <a href="#contact" class="hover:text-saffron-600 transition-colors py-1">Contact</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#programs" class="bg-saffron-500 hover:bg-saffron-600 text-white font-semibold text-sm px-4 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                        <i class="fas fa-calendar-check"></i> Join Program
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" class="p-2 rounded-md text-saffron-800 hover:bg-saffron-100 focus:outline-none" aria-label="Toggle Navigation Menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-saffron-100 px-4 pt-2 pb-6 space-y-2 shadow-xl">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">Home</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">About Us</a>
+            <a href="#programs" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">Weekly Programs</a>
+            <a href="#festivals" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">Festivals</a>
+            <a href="#saints" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">Visiting Saints</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-saffron-50 hover:text-saffron-600">Contact & Satsang</a>
+            <div class="pt-2">
+                <a href="#programs" class="mobile-link block text-center bg-saffron-500 text-white px-4 py-2.5 rounded-full font-medium shadow">Join Next Satsang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-saffron-900 text-white overflow-hidden min-h-[85vh] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero-kirtan.jpg" loading="eager" fetchpriority="high" decoding="async"  
+                 alt="Devotional Kirtan Satsanga" 
+                 class="w-full h-full object-cover object-center opacity-35 hover:opacity-40 transition-opacity duration-700">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-saffron-800/80 border border-gold-400/40 text-gold-300 text-xs sm:text-sm uppercase font-semibold tracking-widest px-4 py-1.5 rounded-full shadow-inner">
+                        <i class="fas fa-dharmachakra"></i> ISKCON Inspired Devotional Community 
+                    </div>
+                    <h1 class="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                        Welcome to <br><span class="text-gold-400">Hare Krishna Community</span> 
+                    </h1>
+                    <h2 class="text-saffron-100 text-lg sm:text-xl font-medium tracking-wide">
+                        Bloomington-Normal, Illinois    
+                    </h2>
+                    <p class="text-saffron-100 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Dedicated to sharing the timeless wisdom of Bhagavad-gita, joyful Harinam Sankirtan, devotional service, and spiritual fellowship across the Bloomington-Normal community.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#programs" class="bg-gold-500 hover:bg-gold-400 text-saffron-900 font-bold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-calendar-alt"></i> View Weekly Schedule
+                        </a>
+                        <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30 px-7 py-3.5 rounded-full backdrop-blur-sm transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-heart"></i> Connect With Us
+                        </a>
+                    </div>
+
+                    <!-- Quote Banner -->
+                    <div class="pt-6 border-t border-saffron-700/60 text-xs sm:text-sm text-saffron-200 italic">
+                        "Chant the Holy Name, chant the Holy Name, chant the Holy Name of the Lord..." — Sri Chaitanya Mahaprabhu
+                    </div>
+                </div>
+
+                <!-- Right Visual Column: Inspiring Personalities -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
+                    
+                    <!-- Chaitanya Mahaprabhu Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-gold-400/30 text-center shadow-xl hover:translate-y-[-4px] transition-all">
+                        <div class="relative overflow-hidden rounded-xl mb-3 aspect-[3/4] bg-saffron-800">
+                            <img src="chaitanya.jpg" loading="lazy" decoding="async" 
+                                 alt="Sri Chaitanya Mahaprabhu" 
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 id="chaitanya-img">
+                        </div>
+                        <h3 class="font-cinzel text-sm sm:text-base font-bold text-gold-300">Sri Chaitanya</h3>
+                        <p class="text-[11px] sm:text-xs text-saffron-200 mt-0.5">Yuga Avatara & Sankirtan Movement</p>
+                    </div>
+
+                    <!-- Srila Prabhupada Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-gold-400/30 text-center shadow-xl hover:translate-y-[-4px] transition-all">
+                        <div class="relative overflow-hidden rounded-xl mb-3 aspect-[3/4] bg-saffron-800">
+                            <img src="prabhupada.jpg" loading="lazy" decoding="async" 
+                                 alt="A.C. Bhaktivedanta Swami Srila Prabhupada" 
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                 id="prabhupada-img">
+                        </div>
+                        <h3 class="font-cinzel text-sm sm:text-base font-bold text-gold-300">Srila Prabhupada</h3>
+                        <p class="text-[11px] sm:text-xs text-saffron-200 mt-0.5">Founder-Acharya of ISKCON</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Kirtan Satsanga Banner Feature -->
+    <section class="bg-saffron-800 py-12 relative overflow-hidden border-t-4 border-gold-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-saffron-900 to-saffron-800 rounded-3xl overflow-hidden shadow-2xl border border-gold-400/30 grid grid-cols-1 lg:grid-cols-12 items-center">
+                <div class="lg:col-span-7 p-8 sm:p-12 space-y-4">
+                    <span class="bg-gold-400/20 text-gold-300 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full border border-gold-400/40">
+                        <i class="fas fa-drum mr-1"></i> Community Gathering
+                    </span>
+                    <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white leading-tight">
+                        Experience the Joy of Congregational Kirtan & Worship
+                    </h2>
+                    <p class="text-saffron-100 text-sm sm:text-base leading-relaxed">
+                        Join our weekly Satsanga gatherings where devotees and seekers gather to sing the Holy Names, play mridangas and kartals before Sri Sri Radha Krishna, and partake in spiritual feast prasadam.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#programs" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-saffron-900 font-bold px-6 py-3 rounded-xl shadow-md transition-all text-sm">
+                            <i class="fas fa-users"></i> Join Next Satsanga
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 h-64 lg:h-full relative overflow-hidden">
+                    <img src="kirtan.jpg" loading="eager" fetchpriority="high" decoding="async"  
+                         alt="Satsanga Kirtan in Bloomington Normal" 
+                         class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About HKC -->
+    <section id="about" class="py-20 bg-white border-b border-amber-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <div class="absolute -inset-3 rounded-3xl border border-amber-300/70"></div>
+            <img loading="lazy" decoding="async" src="hero-kirtan.jpg" alt="Devotional kirtan gathering in a Krishna temple" loading="lazy" decoding="async" class="relative w-full h-72 sm:h-96 object-cover rounded-2xl shadow-xl">
+          </div>
+          <div class="space-y-5">
+            <span class="text-orange-700 font-semibold text-xs uppercase tracking-[.18em]">A community rooted in bhakti</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">A place to connect, learn, and grow in Krishna consciousness</h2>
+            <p class="text-gray-600 leading-relaxed">Hare Krishna Community (HKC) brings people across Bloomington-Normal together through kirtan, sacred texts, prasadam, service, and spiritual friendship.</p>
+            <p class="text-gray-600 leading-relaxed">Whether you are discovering the Bhagavad-gita for the first time or deepening a long-standing devotional practice, you are welcome to join a gathering and take part at your own pace.</p>
+            <a href="#programs" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-full shadow-md">Explore our gatherings <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ongoing Activities & Schedule Section -->
+    <section id="programs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-saffron-600 font-semibold text-sm uppercase tracking-wider">Regular Gatherings</span>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-saffron-900 mt-1">Ongoing Programs & Schedule</h2>
+                </div>
+                <!-- Filter Tabs -->
+                <div id="program-filters" class="flex flex-wrap gap-2 mt-6 md:mt-0">
+                    <button data-filter="all" class="filter-btn active bg-saffron-500 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-full transition-all shadow-sm">All Programs</button>
+                    <button data-filter="weekend" class="filter-btn bg-saffron-100 hover:bg-saffron-200 text-saffron-800 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full transition-all">Weekends</button>
+                    <button data-filter="weekday" class="filter-btn bg-saffron-100 hover:bg-saffron-200 text-saffron-800 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full transition-all">Weekdays</button>
+                    <button data-filter="online" class="filter-btn bg-saffron-100 hover:bg-saffron-200 text-saffron-800 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full transition-all">Online</button>
+                </div>
+            </div>
+
+            <!-- Program Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="programs-grid">
+
+                <!-- Program 1: Bhakti Vriksha -->
+                <div class="program-card bg-devotional-cream rounded-2xl border border-saffron-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="weekend">
+                    <div class="h-48 bg-saffron-800 relative overflow-hidden">
+                        <img loading="lazy" decoding="async" src="hero-kirtan.jpg" alt="Sri Chaitanya Mahaprabhu and devotional sankirtan" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-saffron-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Home Satsang</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center text-xs font-medium text-saffron-600 gap-2 mb-2">
+                                <i class="fas fa-clock"></i> Friday • 6:00 PM - 8:00 PM
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900 mb-2">Bhakti Families</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Informal weekly home gatherings involving melodious Kirtan, Bhagavad-gita study, Q&A, and delicious prasadam dinner.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-saffron-100 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                            <div class="flex flex-wrap items-center gap-2 text-[10px] text-gray-500">
+                                <span class="inline-flex items-center gap-1 font-semibold text-saffron-600">
+                                    <i class="fas fa-map-marker-alt text-saffron-500"></i> Locations
+                                </span>
+                                <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+                                    <li>
+                                        <span class="bg-white border border-saffron-200 rounded-full px-2 py-1">Bloomington, IL</span>
+                                    </li>
+                                    <li>
+                                        <span class="bg-white border border-saffron-200 rounded-full px-2 py-1">Champaign, IL</span>
+                                    </li>
+                                    <li>
+                                        <span class="bg-white border border-saffron-200 rounded-full px-2 py-1">Peoria, IL</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button onclick="openRSVP('Bhakti Vriksha Weekly Satsang')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">RSVP / Host <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2: Online Srimad-Bhagavatam Reading -->
+                <div class="program-card bg-devotional-cream rounded-2xl border border-saffron-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="online weekday">
+                    <div class="h-48 bg-saffron-800 relative overflow-hidden">
+                        <img loading="lazy" decoding="async" src="SB.jpeg" alt="Srimad Bhagavatam sacred scripture book" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Virtual Class</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center text-xs font-medium text-saffron-600 gap-2 mb-2">
+                                <i class="fas fa-clock"></i> Weekly Thursday • 8:30 PM - 9:15 PM
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900 mb-2">Srimad-Bhagavatam Study</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Start your day with inspiring nectar from Srimad-Bhagavatam verse-by-verse reading, purport discussions, and practical applications.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-saffron-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500"><i class="fas fa-video text-blue-500 mr-1"></i> Online</span>
+                            <button onclick="openRSVP('Online Bhagavatam Study')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">Get Link <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3: Sunday Feast -->
+                <!-- <div class="program-card bg-devotional-cream rounded-2xl border border-saffron-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="weekend">
+                    <div class="h-48 bg-saffron-800 relative overflow-hidden">
+                        <img loading="lazy" decoding="async" src="hero-kirtan.jpg" alt="Devotees gathered for Krishna kirtan" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-gold-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Weekly Highlight</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center text-xs font-medium text-saffron-600 gap-2 mb-2">
+                                <i class="fas fa-clock"></i> Sundays • 4:30 PM - 7:00 PM
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900 mb-2">Sunday Love Feast</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Main weekly gathering featuring energetic Kirtan, spiritual discourse, Aarti ceremony, and a sumptuous multi-course vegetarian feast.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-saffron-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500"><i class="fas fa-map-marker-alt text-saffron-500 mr-1"></i> Community Hall, Normal IL</span>
+                            <button onclick="openRSVP('Sunday Feast Program')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">Attend <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Program 4: Bhakti Kids In Person Classes -->
+                <div class="program-card bg-devotional-cream rounded-2xl border border-saffron-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="weekend">
+                    <div class="h-48 bg-saffron-800 relative overflow-hidden">
+                        <img loading="lazy" decoding="async" src="bhaktikids.avif" alt="Devotional learning inspired by Sri Chaitanya Mahaprabhu" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Children</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center text-xs font-medium text-saffron-600 gap-2 mb-2">
+                                <i class="fas fa-clock"></i> Sundays • 10:00 AM - 12 PM
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900 mb-2">Bhakti Kids In Person Classes</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Interactive in-person spiritual values class for kids: Vedic storytelling, Sloka memorization, devotional crafts, drama, bhajans, and games.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-saffron-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-500"><i class="fas fa-map-marker-alt text-saffron-500 mr-1"></i> Bloomington, IL</span>
+                            <span class="text-xs text-gray-500"><i class="fas fa-user-graduate text-emerald-500 mr-1"></i> Ages 4 - 14</span>
+                            <button onclick="openRSVP('Bhakti Kids In Person Classes')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">Register Kid <i class="fas fa-arrow-right ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 5: Campus Outreach & Youth Gita Club -->
+                <!-- <div class="program-card bg-devotional-cream rounded-2xl border border-saffron-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="weekday">
+                    <div class="h-48 bg-saffron-800 relative overflow-hidden">
+                        <img loading="lazy" decoding="async" src="chaitanya.jpg" alt="Youth learning Krishna consciousness through devotional teachings" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Students & Youth</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center text-xs font-medium text-saffron-600 gap-2 mb-2">
+                                <i class="fas fa-clock"></i> Wednesdays • 6:30 PM - 8:00 PM
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900 mb-2">Gita & Meditation Club</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Tailored for university students & young professionals. Discover stress management, mantra meditation, and practical philosophy.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-saffron-100 flex items-center justify-between">
+                                
+                            <span class="text-xs text-gray-500"><i class="fas fa-video text-blue-500 mr-1"></i> Online</span>
+                            <button onclick="openRSVP('Youth Gita Club')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">Join Group <i class="fas fa-arrow-right ml-1"></i></button>
+                      
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Festivals Section -->
+    <section id="festivals" class="py-20 pattern-bg border-t border-b border-saffron-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-saffron-600 font-semibold text-sm uppercase tracking-wider">Celebrations & Joy</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-saffron-900 mt-2">Upcoming Major Festivals</h2>
+                <div class="w-20 h-1 bg-gold-400 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base">
+                    Join us in celebrating rich Vaishnava festivals filled with ornate deity worship, ecstatic kirtans, theatrical performances, and grand prasadam feasts.
+                </p>
+            </div>
+
+            <!-- Festival Timeline Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Festival 1: Gaura Purnima -->
+                <div class="bg-white rounded-2xl border-2 border-gold-300 shadow-md p-6 relative overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div class="absolute top-0 right-0 bg-gold-400 text-saffron-900 font-bold text-xs uppercase px-4 py-1 rounded-bl-xl">
+                        Spring Celebration
+                    </div>
+                    <div>
+                        <div class="text-saffron-600 font-bold text-sm tracking-wide uppercase mb-1">
+                            <i class="far fa-calendar-alt mr-1"></i> March 2027
+                        </div>
+                        <h3 class="font-cinzel text-2xl font-bold text-saffron-900 mb-3">Gaura Purnima</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Appearance day of Lord Sri Chaitanya Mahaprabhu. Features ecstatic Harinam, Golden Abhishek ceremony, class on divine pastimes, and grand fast-breaking prasadam.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-xs text-gray-500 bg-saffron-50 p-2.5 rounded-lg border border-saffron-100">
+                            <strong>Schedule:</strong> 5:00 PM Kirtan & Abhishek | 7:00 PM Discourse & Feast
+                        </div>
+                        <button onclick="openRSVP('Gaura Purnima Festival')" class="w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-2.5 rounded-xl shadow transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fas fa-ticket"></i> RSVP for Gaura Purnima
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Festival 2: Sri Krishna Janmashtami -->
+                <div class="bg-white rounded-2xl border-2 border-gold-400 shadow-md p-6 relative overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all scale-102">
+                    <div class="absolute top-0 right-0 bg-saffron-600 text-white font-bold text-xs uppercase px-4 py-1 rounded-bl-xl">
+                        Grandest Festival
+                    </div>
+                    <div>
+                        <div class="text-saffron-600 font-bold text-sm tracking-wide uppercase mb-1">
+                            <i class="far fa-calendar-alt mr-1"></i> Late Summer 2027
+                        </div>
+                        <h3 class="font-cinzel text-2xl font-bold text-saffron-900 mb-3">Sri Krishna Janmashtami</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            The divine appearance day of Lord Sri Krishna. Non-stop kirtan, midnight Maha-Aarti, cultural drama, 108 bhoga offerings, and midnight feast.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-xs text-gray-500 bg-saffron-50 p-2.5 rounded-lg border border-saffron-100">
+                            <strong>Schedule:</strong> 6:00 PM - Midnight Celebration
+                        </div>
+                        <button onclick="openRSVP('Krishna Janmashtami')" class="w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-2.5 rounded-xl shadow transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fas fa-ticket"></i> RSVP & Volunteer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Festival 3: Radhastami -->
+                <div class="bg-white rounded-2xl border-2 border-gold-300 shadow-md p-6 relative overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div class="absolute top-0 right-0 bg-gold-400 text-saffron-900 font-bold text-xs uppercase px-4 py-1 rounded-bl-xl">
+                        Divine Grace
+                    </div>
+                    <div>
+                        <div class="text-saffron-600 font-bold text-sm tracking-wide uppercase mb-1">
+                            <i class="far fa-calendar-alt mr-1"></i> Autumn 2027
+                        </div>
+                        <h3 class="font-cinzel text-2xl font-bold text-saffron-900 mb-3">Sri Radhastami</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Appearance day of Srimati Radharani, the queen of Vrindavan and embodiment of divine devotion. Flowers decoration, special kirtans, and feast.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-xs text-gray-500 bg-saffron-50 p-2.5 rounded-lg border border-saffron-100">
+                            <strong>Schedule:</strong> 11:00 AM - 2:00 PM Daytime Program
+                        </div>
+                        <button onclick="openRSVP('Radhastami Festival')" class="w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-2.5 rounded-xl shadow transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fas fa-ticket"></i> RSVP for Radhastami
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Visiting Saints & Scholars Section -->
+    <section id="saints" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-saffron-600 font-semibold text-sm uppercase tracking-wider">Spiritual Inspiration</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-saffron-900 mt-2">Visiting Saints & Spiritual Teachers</h2>
+                <div class="w-20 h-1 bg-gold-400 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base">
+                    We are honored to periodically host traveling monks, Sannyasis, and senior Prabhupada disciples who bless Bloomington-Normal with their lectures and spiritual guidance.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Guest Card 1 -->
+                <div class="bg-devotional-cream rounded-2xl border border-saffron-200 p-6 sm:p-8 flex flex-col md:flex-row gap-6 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-full md:w-44 h-52 bg-saffron-800 rounded-xl overflow-hidden flex-shrink-0 relative">
+                        <img loading="lazy" decoding="async" src="prabhupada.jpg" alt="His Divine Grace A. C. Bhaktivedanta Swami Prabhupada" class="w-full h-full object-cover">
+                        <span class="absolute bottom-2 left-2 bg-saffron-900/90 text-gold-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Special Guest</span>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="inline-block bg-saffron-100 text-saffron-800 text-xs font-bold px-2.5 py-1 rounded-md mb-2">
+                                Upcoming Visit • Spring
+                            </div>
+                            <h3 class="font-cinzel text-xl font-bold text-saffron-900">His Holiness Srila Monks & Scholars Tour</h3>
+                            <p class="text-xs text-saffron-600 font-semibold mb-3">Senior Vaishnava Scholar & Traveling Monk</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                "Unlocking Mind Peace through Bhagavad-gita Wisdom" — A special weekend retreat and discourse series open to all.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-saffron-200/60 pt-4">
+                            <span class="text-xs text-gray-500"><i class="fas fa-calendar-day text-saffron-500 mr-1"></i> Check Back for Dates</span>
+                            <button onclick="openRSVP('Visiting Saints Discourse')" class="text-xs font-bold text-saffron-600 hover:text-saffron-800 uppercase tracking-wider">Get Notified <i class="fas fa-bell ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Host / Request Banner Card -->
+                <div class="bg-gradient-to-br from-saffron-800 to-saffron-900 rounded-2xl p-6 sm:p-8 text-white flex flex-col justify-between shadow-lg relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 text-saffron-700/30 text-9xl font-cinzel select-none pointer-events-none">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <div>
+                        <span class="bg-gold-500/20 text-gold-300 text-xs font-bold uppercase px-3 py-1 rounded-full border border-gold-400/30">Host a Saint</span>
+                        <h3 class="font-cinzel text-2xl font-bold text-gold-300 mt-3 mb-2">Invite or Host Spiritual Seminars</h3>
+                        <p class="text-saffron-100 text-sm leading-relaxed mb-6">
+                            Would you like to host a home Satsang or organize a spiritual discourse with visiting monks at your home in Bloomington or Normal?
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <ul class="text-xs text-saffron-200 space-y-2 mb-4">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Home blessing & kirtan</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Personal spiritual guidance</li>
+                        </ul>
+                        <a href="#contact" class="inline-block w-full text-center bg-gold-400 hover:bg-gold-300 text-saffron-900 font-bold py-3 rounded-xl transition-colors text-sm shadow">
+                            Request Home Satsang Hosting
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Community Info Section -->
+    <section id="contact" class="py-20 pattern-bg border-t border-saffron-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info & FAQ -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-saffron-600 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+                        <h2 class="font-cinzel text-3xl font-bold text-saffron-900 mt-1">Connect With Us</h2>
+                        <p class="text-gray-600 text-sm mt-3 leading-relaxed">
+                            Whether you have questions about Bhagavad-gita, want to join our programs, host a home satsang, or volunteer — we welcome you!
+                        </p>
+                    </div>
+
+                    <!-- Contact Details Box -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-saffron-200 space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-saffron-100 text-saffron-600 rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-saffron-900 text-sm">Serving Area</h4>
+                                <p class="text-gray-600 text-xs">Bloomington - Normal, Illinois & Surrounding Towns</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-saffron-100 text-saffron-600 rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-saffron-900 text-sm">Email Address</h4>
+                                <p class="text-gray-600 text-xs">contact@myhkc.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-saffron-100 text-saffron-600 rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-saffron-900 text-sm">Phone / WhatsApp</h4>
+                                <p class="text-gray-600 text-xs">+1 (309) 555-0198</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs Accordion -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-saffron-200">
+                        <h3 class="font-cinzel font-bold text-saffron-900 text-lg mb-4">Frequently Asked Questions</h3>
+                        <div class="space-y-3">
+                            <details class="group rounded-lg bg-saffron-50/60 p-3 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between font-semibold text-xs text-saffron-900">
+                                    <span>Do I need prior experience to attend?</span>
+                                    <span class="transition group-open:-rotate-180"><i class="fas fa-chevron-down"></i></span>
+                                </summary>
+                                <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                                    Not at all! Everyone is welcome regardless of background, culture, or prior experience with yoga or meditation.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-lg bg-saffron-50/60 p-3 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between font-semibold text-xs text-saffron-900">
+                                    <span>Is there any fee for attending programs?</span>
+                                    <span class="transition group-open:-rotate-180"><i class="fas fa-chevron-down"></i></span>
+                                </summary>
+                                <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                                    All regular programs and prasadam meals are free of charge. Donations are strictly voluntary.
+                                </p>
+                            </details>
+
+                            <details class="group rounded-lg bg-saffron-50/60 p-3 [&_summary::-webkit-details-marker]:hidden">
+                                <summary class="flex cursor-pointer items-center justify-between font-semibold text-xs text-saffron-900">
+                                    <span>Can I host Bhakti Vriksha at my home?</span>
+                                    <span class="transition group-open:-rotate-180"><i class="fas fa-chevron-down"></i></span>
+                                </summary>
+                                <p class="mt-2 text-xs text-gray-600 leading-relaxed">
+                                    Yes! Contact us using the form to schedule a home satsang, kirtan, or book distribution event at your home.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Contact & Volunteer Form -->
+                <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-saffron-200">
+                    <h3 class="font-cinzel text-2xl font-bold text-saffron-900 mb-2">Send Us a Message</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm mb-6">Fill out the form below to inquire about programs, volunteer, or request home visits.</p>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="form-name" class="block text-xs font-semibold text-gray-700 mb-1">Full Name *</label>
+                                <input type="text" id="form-name" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-saffron-500 text-sm outline-none transition-all" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="form-email" class="block text-xs font-semibold text-gray-700 mb-1">Email Address *</label>
+                                <input type="email" id="form-email" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-saffron-500 text-sm outline-none transition-all" placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="form-phone" class="block text-xs font-semibold text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="form-phone" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-saffron-500 text-sm outline-none transition-all" placeholder="(309) 000-0000">
+                            </div>
+                            <div>
+                                <label for="form-interest" class="block text-xs font-semibold text-gray-700 mb-1">Primary Interest</label>
+                                <select id="form-interest" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-saffron-500 text-sm outline-none transition-all">
+                                    <option value="Bhakti Vriksha">Attending Bhakti Vriksha</option>
+                                    <option value="Sunday Feast">Sunday Feast Program</option>
+                                    <option value="Bhakti Kids">Bhakti Kids In Person Classes</option>
+                                    <option value="Host Satsang">Host Satsang at Home</option>
+                                    <option value="Volunteering">Volunteering Opportunities</option>
+                                    <option value="General Question">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="form-message" class="block text-xs font-semibold text-gray-700 mb-1">Message / Request Details *</label>
+                            <textarea id="form-message" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-saffron-500 focus:border-saffron-500 text-sm outline-none transition-all" placeholder="How can we help you on your spiritual journey?"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all text-sm flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Submit Message
+                        </button>
+                    </form>
+
+                    <!-- Alert Box Container -->
+                    <div id="form-status" class="hidden mt-4 p-4 rounded-xl text-xs font-medium"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-saffron-900 text-saffron-200 border-t border-saffron-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-saffron-500 flex items-center justify-center text-white text-xs font-bold font-cinzel">
+                            HKC
+                        </div>
+                        <span class="font-cinzel font-bold text-lg text-white">HARE KRISHNA</span>
+                    </div>
+                    <p class="text-xs text-saffron-300 leading-relaxed">
+                        Bloomington-Normal, IL Community inspired by the teachings of Srila Prabhupada & ISKCON lineage.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-cinzel text-white font-bold text-sm mb-3">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home Page</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Community</a></li>
+                        <li><a href="#programs" class="hover:text-gold-400 transition-colors">Weekly Schedule</a></li>
+                        <li><a href="#festivals" class="hover:text-gold-400 transition-colors">Upcoming Festivals</a></li>
+                        <li><a href="#saints" class="hover:text-gold-400 transition-colors">Visiting Saints</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Community Programs -->
+                <div>
+                    <h4 class="font-cinzel text-white font-bold text-sm mb-3">Programs</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#programs" class="hover:text-gold-400 transition-colors">Bhakti Vriksha Gathering</a></li>
+                        <li><a href="#programs" class="hover:text-gold-400 transition-colors">Online Srimad-Bhagavatam</a></li>
+                        <li><a href="#programs" class="hover:text-gold-400 transition-colors">Bhakti Kids In Person Classes</a></li>
+                        <li><a href="#programs" class="hover:text-gold-400 transition-colors">Youth Meditation Club</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div>
+                    <h4 class="font-cinzel text-white font-bold text-sm mb-3">Stay Inspired</h4>
+                    <p class="text-xs text-saffron-300 mb-3">Subscribe to our weekly satsang & festival updates.</p>
+                    <form id="newsletter-form" class="space-y-2">
+                        <input type="email" id="newsletter-email" required placeholder="Enter your email" class="w-full px-3 py-2 rounded-lg bg-saffron-800 text-white placeholder-saffron-400 text-xs border border-saffron-700 outline-none focus:border-gold-400">
+                        <button type="submit" class="w-full bg-gold-500 hover:bg-gold-400 text-saffron-900 font-bold py-2 rounded-lg text-xs transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Maha Mantra -->
+            <div class="pt-8 border-t border-saffron-800/80 flex flex-col sm:flex-row justify-between items-center text-xs text-saffron-400 gap-4">
+                <p>&copy; 2026 Hare Krishna Community Bloomington-Normal, IL. All Rights Reserved.</p>
+                <div class="flex space-x-4 text-base">
+                    <a href="#" aria-label="Facebook" class="hover:text-gold-400 transition-colors"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube" class="hover:text-gold-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="WhatsApp Group" class="hover:text-gold-400 transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram" class="hover:text-gold-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RSVP Interactive Modal -->
+    <div id="rsvp-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-saffron-200 relative animate-fade-in">
+            <!-- Close Button -->
+            <button id="close-modal" aria-label="Close registration dialog" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-lg p-1">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="text-center mb-4">
+                <div class="w-12 h-12 bg-saffron-100 text-saffron-600 rounded-full mx-auto flex items-center justify-center text-xl mb-2">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-saffron-900" id="modal-program-title">Program Registration</h3>
+                <p class="text-xs text-gray-500 mt-1">Confirm your attendance for Bloomington-Normal Satsang</p>
+            </div>
+
+            <form id="rsvp-form" class="space-y-3">
+                <div>
+                    <label for="modal-name" class="block text-xs font-semibold text-gray-700 mb-1">Your Name *</label>
+                    <input type="text" id="modal-name" required class="w-full px-3 py-2 rounded-xl border border-gray-300 text-xs outline-none focus:ring-2 focus:ring-saffron-500" placeholder="Full Name">
+                </div>
+                <div>
+                    <label for="modal-email" class="block text-xs font-semibold text-gray-700 mb-1">Email Address *</label>
+                    <input type="email" id="modal-email" required class="w-full px-3 py-2 rounded-xl border border-gray-300 text-xs outline-none focus:ring-2 focus:ring-saffron-500" placeholder="name@example.com">
+                </div>
+                <div>
+                    <label for="modal-attendees" class="block text-xs font-semibold text-gray-700 mb-1">Number of Attendees</label>
+                    <input type="number" id="modal-attendees" min="1" max="10" value="1" class="w-full px-3 py-2 rounded-xl border border-gray-300 text-xs outline-none focus:ring-2 focus:ring-saffron-500">
+                </div>
+                <div>
+                    <label for="modal-notes" class="block text-xs font-semibold text-gray-700 mb-1">Special Requests / Prasadam Preferences</label>
+                    <textarea id="modal-notes" rows="2" class="w-full px-3 py-2 rounded-xl border border-gray-300 text-xs outline-none focus:ring-2 focus:ring-saffron-500" placeholder="Dietary needs, rides needed, etc."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-saffron-500 hover:bg-saffron-600 text-white font-bold py-2.5 rounded-xl shadow transition-colors text-xs uppercase tracking-wider mt-2">
+                    Confirm RSVP
+                </button>
+            </form>
+
+            <div id="modal-status" class="hidden mt-3 p-3 rounded-lg text-xs font-medium text-center"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileBtn.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const programCards = document.querySelectorAll('.program-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-saffron-500', 'text-white');
+                        b.classList.add('bg-saffron-100', 'text-saffron-800');
+                    });
+                    btn.classList.add('active', 'bg-saffron-500', 'text-white');
+                    btn.classList.remove('bg-saffron-100', 'text-saffron-800');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    programCards.forEach(card => {
+                        const categories = card.getAttribute('data-category');
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const contactForm = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                formStatus.className = "mt-4 p-4 rounded-xl text-xs font-medium bg-emerald-100 text-emerald-800 border border-emerald-300";
+                formStatus.innerHTML = "<i class='fas fa-check-circle mr-1'></i> Hare Krishna! Thank you for reaching out. This preview form does not send messages yet. Please connect a form service before publishing.";
+                formStatus.classList.remove('hidden');
+                contactForm.reset();
+
+                setTimeout(() => {
+                    formStatus.classList.add('hidden');
+                }, 6000);
+            });
+
+            const newsletterForm = document.getElementById('newsletter-form');
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alertBox("This preview does not save subscriptions yet. Connect an email newsletter service before publishing.");
+                newsletterForm.reset();
+            });
+
+            const rsvpModal = document.getElementById('rsvp-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+            const rsvpForm = document.getElementById('rsvp-form');
+            const modalStatus = document.getElementById('modal-status');
+
+            closeModalBtn.addEventListener('click', closeRSVP);
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeRSVP(); });
+
+            rsvpModal.addEventListener('click', (e) => {
+                if (e.target === rsvpModal) closeRSVP();
+            });
+
+            rsvpForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                modalStatus.className = "mt-3 p-3 rounded-lg text-xs font-medium text-center bg-emerald-100 text-emerald-800 border border-emerald-200";
+                modalStatus.innerText = "This preview RSVP is not sent to the organizers yet. Connect a form service before publishing.";
+                modalStatus.classList.remove('hidden');
+
+                setTimeout(() => {
+                    closeRSVP();
+                    modalStatus.classList.add('hidden');
+                    rsvpForm.reset();
+                }, 2500);
+            });
+        });
+
+        function openRSVP(programName) {
+            const modal = document.getElementById('rsvp-modal');
+            const modalTitle = document.getElementById('modal-program-title');
+            modalTitle.innerText = "RSVP: " + programName;
+            modal.classList.remove('hidden');
+        }
+
+        function closeRSVP() {
+            const modal = document.getElementById('rsvp-modal');
+            modal.classList.add('hidden');
+        }
+
+        function alertBox(message) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = "fixed bottom-5 right-5 z-50 bg-saffron-800 text-white px-5 py-3 rounded-xl shadow-2xl border border-gold-400 text-xs font-semibold flex items-center gap-2 animate-bounce";
+            alertDiv.innerHTML = `<i class="fas fa-om text-gold-300 text-base"></i> ${message}`;
+            document.body.appendChild(alertDiv);
+
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
